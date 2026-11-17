@@ -1,0 +1,15 @@
+[Unit]
+Description=Todo REST API
+After=network.target
+
+[Service]
+Type=simple
+User={{ app_name }}
+Group={{ app_name }}
+WorkingDirectory={{ app_dir }}
+ExecStart=/usr/bin/java -jar {{ app_dir }}/{{ app_name }}.jar --server.port={{ app_port }}
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

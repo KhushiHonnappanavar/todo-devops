@@ -1,0 +1,5 @@
+- name: Deploy Todo REST API
+  hosts: app
+  become: true
+  roles:
+    - todoapp

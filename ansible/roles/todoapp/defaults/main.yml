@@ -1,0 +1,5 @@
+app_name: todoapp
+app_service_name: todoapp
+app_port: 8081
+app_dir: /opt/todoapp
+app_jar_source: "{{ playbook_dir }}/../target/todoapp-0.0.1-SNAPSHOT.jar"
