@@ -15,3 +15,5 @@ The API runs at `http://localhost:8080`.
 - `POST /todos` adds a todo.
 
 Example POST body: `{"title":"Complete DevOps assignment"}`
+
+Jenkins CI checks this repository for changes and builds the project.
